@@ -1,8 +1,8 @@
-package com.yur.note.account.service.impl;
+package com.yur.auth.service.impl;
 
-import com.yur.note.account.dao.UserMapper;
-import com.yur.note.account.entity.User;
-import com.yur.note.account.service.UserService;
+import com.yur.auth.dao.UserMapper;
+import com.yur.auth.entity.User;
+import com.yur.auth.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

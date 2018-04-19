@@ -1,6 +1,6 @@
-package com.yur.note.account.dao;
+package com.yur.auth.dao;
 
-import com.yur.note.account.entity.User;
+import com.yur.auth.entity.User;
 import org.springframework.stereotype.Repository;
 
 @Repository

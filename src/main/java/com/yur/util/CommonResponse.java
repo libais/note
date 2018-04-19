@@ -8,16 +8,16 @@ import java.util.Map;
 
 public class CommonResponse<T> {
 
-    private boolean success;
+    private boolean success = false;
 
-    private Object msg;
+    private Object msg = null;
 
-    private int count;
+    private int count = 0;
 
-    private List<T> data;
+    private List<T> data = null;
 
-    private final String SUC = "操作成功!";
-    private final String FAIL = "操作失败!";
+//    private final String SUC = "操作成功!";
+//    private final String FAIL = "操作失败!";
 
 
     public CommonResponse(boolean success, Object msg) {
@@ -26,11 +26,11 @@ public class CommonResponse<T> {
         if (msg != null && StringUtils.isNotBlank(msg.toString())) {
             this.msg = msg;
         } else {
-            if(success) {
-                this.msg = SUC;
-            } else {
-                this.msg = FAIL;
-            }
+//            if(success) {
+//                this.msg = SUC;
+//            } else {
+//                this.msg = FAIL;
+//            }
         }
 
     }
@@ -42,11 +42,11 @@ public class CommonResponse<T> {
         if (msg != null && StringUtils.isNotBlank(msg.toString())) {
             this.msg = msg;
         } else {
-            if(success) {
-                this.msg = SUC;
-            } else {
-                this.msg = FAIL;
-            }
+//            if(success) {
+//                this.msg = SUC;
+//            } else {
+//                this.msg = FAIL;
+//            }
         }
     }
 
@@ -71,11 +71,43 @@ public class CommonResponse<T> {
             }
             this.msg = map;
         }else{
-            if(success) {
-                this.msg = SUC;
-            } else {
-                this.msg = FAIL;
-            }
+//            if(success) {
+//                this.msg = SUC;
+//            } else {
+//                this.msg = FAIL;
+//            }
         }
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    public Object getMsg() {
+        return msg;
+    }
+
+    public void setMsg(Object msg) {
+        this.msg = msg;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public List<T> getData() {
+        return data;
+    }
+
+    public void setData(List<T> data) {
+        this.data = data;
     }
 }

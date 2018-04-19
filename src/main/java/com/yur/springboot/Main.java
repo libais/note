@@ -1,10 +1,10 @@
-package com.yur.note;
+package com.yur.springboot;
 
 import org.springframework.boot.SpringApplication;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(SpringBootConfig.class, args);
+        SpringApplication.run(NoteApplication.class, args);
     }
 }

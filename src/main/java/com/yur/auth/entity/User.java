@@ -1,4 +1,4 @@
-package com.yur.note.account.entity;
+package com.yur.auth.entity;
 
 public class User {
 
@@ -8,7 +8,7 @@ public class User {
 
     private String password;
 
-    private String ID;
+    private String id;
 
     private String name;
 
@@ -43,12 +43,12 @@ public class User {
         this.password = password;
     }
 
-    public String getID() {
-        return ID;
+    public String getId() {
+        return id;
     }
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public void setID(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -89,7 +89,7 @@ public class User {
                 "userId=" + userId +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
-                ", ID='" + ID + '\'' +
+                ", id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", mobile='" + mobile + '\'' +
                 ", email='" + email + '\'' +
